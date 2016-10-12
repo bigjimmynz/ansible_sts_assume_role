@@ -1,0 +1,6 @@
+---
+sts: true
+sts_role_arn: "arn:aws:iam::<dest accountid>:role/<assumed role>" # Role ARN for Destination Assumed Role
+sts_profile: "lab" # Name of profile setup in ~/.aws/config
+sts_mfa: "arn:aws:iam::<jump accountid>:mfa/<iam username>" # MFA Serial from IAM User page
+sts_role_session_name: "ansible"

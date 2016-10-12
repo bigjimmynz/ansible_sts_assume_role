@@ -1,0 +1,9 @@
+[default]
+region = ap-southeast-2
+output = json
+
+[profile destination]
+role_arn = arn:aws:iam::<dest accountid>:role/<assumed role>
+region = ap-southeast-2
+source_profile = default
+mfa_serial = arn:aws:iam::<jump accountid>:mfa/<username>
